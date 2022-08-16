@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>facebook post app</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="header_text">
+            <p>Create Post</p>
+        </div>
+        <div class="profile_image">
+            <div class="img_wrraper">
+                <img src="assests/6.png" onmouseover="src='assests/profile_img1.png'" onmouseout="src='assests/6.png'"
+                    alt="">
+            </div>
+            <div class="text_wrapper">
+                <p>Nasrullah Balghari</p>
+                <div class="dropdown_wrapper">
+                    <select name="dropdown" id="">
+                        <option value="public"> public</option>
+                        <option value="private"> private</option>
+                        <option value="friends"> friends</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="text_area">
+            <textarea id="text_area" placeholder="What's on your mind?" name="text" id="text_area" cols="30" rows="10"></textarea>
+        </div>
+        <div class="list-group list_icon">
+            <a class="list-group-item" href="#"><i class="fa-regular fa-image"></i> photo/video</a>
+            <a class="list-group-item" href="#"><i class="fa-regular fa-face-grin"></i></i>&nbsp; Feelings</a>
+            <a class="list-group-item" href="#"><i class="fa-regular fa-calendar-days"></i>&nbsp; Tag Event</a>
+        </div>
+        <div class="post_button">
+            <button onclick="post()">Post</button>
+        </div>
+
+    </div>
+    <div id="list">
+
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
